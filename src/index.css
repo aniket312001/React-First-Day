@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+h1{
+  color: rgb(22, 240, 105);
+  text-align: center;
+}
+
+.text{
+  color:rgb(235, 90, 114)
+}

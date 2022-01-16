@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+
 import reportWebVitals from './reportWebVitals';
 import Netflixlist from './Netflixlist';
 import Timedisplay from './Timedisplay';
 import Imagecomp from './Imagecomp';
+
+import App,{favProg,App2} from './App';
+import { add, div, mult, sub } from './Arithmetic';
 
 
 
@@ -37,6 +40,24 @@ ReactDOM.render(
     <p style={styleObject} >Bye see you later</p>              {/* inLine Css */}
 
     <h2 style={colorObj}>Bye</h2>
+
+    <h1>{App()}</h1>
+    <App></App>
+    <br></br>
+    {favProg}
+    <br></br>
+    {App2()}
+
+    <br></br>
+    <br></br>
+    <br></br>
+    <h2>Arithmetic Operations</h2>
+
+    <h3>Addition is {add(4,5)}</h3>
+    <h3>Substration is {sub(4,5)}</h3>
+    <h3>Multiplication is {mult(4,5)}</h3>
+    <h3>Division is {div(12444,275)}</h3>
+
 
   </>,
   document.getElementById('root')
